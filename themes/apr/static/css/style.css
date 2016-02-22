@@ -7,6 +7,19 @@ body {
   margin-bottom: 60px;
 }
 
+/*Center text*/
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 500px;
+}
+
+p {
+  text-align: justify;
+}
+
+
 .square-border {
   border-radius: 0px;
 }
