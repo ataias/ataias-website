@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  {{ .Hugo.Generator }}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
+
+  {{ if eq .URL "/" }}
+    <title>{{ .Title }}</title>
+  {{ else }}
+    <title>{{ .Title }} - {{ .Site.Title }}</title>
+  {{ end }}
+
 </head>
 <body>
 
@@ -20,7 +27,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{.Site.BaseURL}}">Ataias Reis</a>
+        <a class="navbar-brand" href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -28,7 +35,7 @@
         <ul class="nav navbar-nav">
           <!-- Here, I should add some go logic to determine if it will be active or not -->
           <li class="active"><a href="about/index.html">About <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="#">Blog</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -48,17 +55,6 @@
           <!-- List item 1 -->
           <li><a href="#">Link</a></li>
 
-          <!-- List item 2 -->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
 
         </ul>
       </div><!-- /.navbar-collapse -->

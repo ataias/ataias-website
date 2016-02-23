@@ -10,10 +10,20 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="/css/style.css" />
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      var yearGenerated = {{.Now.Year}};
+      var systemYear = new Date().getFullYear();
+      var year = systemYear < yearGenerated ? yearGenerated : systemYear;
+      document.getElementById("currentYear").innerHTML = year;
+    });
+ </script>
+
 <footer class="footer">
-      <div class="container">
+      <div class="container-fluid">
         <p class="text-muted">
-          © 2016-{{ .Now.Year }} <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          © {{ .Site.Params.initialyear }}-<span id="currentYear"></span> <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             <span itemprop="name">Ataias Pereira Reis.</span></span>
             <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
 please attribute properly and link back. <br>
