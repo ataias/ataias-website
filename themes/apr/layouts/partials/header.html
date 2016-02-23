@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   {{ .Hugo.Generator }}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   {{ if eq .URL "/" }}
     <title>{{ .Title }}</title>
   {{ else }}
     <title>{{ .Title }} - {{ .Site.Title }}</title>
   {{ end }}
+
+  <link rel="icon" type="image/png" href="assets/favicon/ataias.png" />
 
 </head>
 <body>
@@ -27,7 +29,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <!-- <span> -->
+          <a class="navbar-brand"><img class="logo" src="assets/logo/ataias.white.png" alt="Ataias' Logo" title="Ataias' Logo"/></a>
         <a class="navbar-brand" href="{{.Site.BaseURL}}">{{ .Site.Title }}</a>
+      <!-- </span> -->
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
