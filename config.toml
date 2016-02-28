@@ -14,11 +14,15 @@ disqusShortname = ""
   Blog = "Blog"
   About = "About"
 
-# Add additional social link entries underneath
+# Accounts
 [social]
-    twitter  = "https://twitter.com/ataiasreis"
-    github   = "https://github.com/ataias"
-    googleplus  = "https://plus.google.com/109223219327789162075"
+    twitter  = "ataiasreis"
+    github   = "ataias"
+    googleplus  = "109223219327789162075"
+    facebook = "ataiasreis"
+    linkedin = "ataias-pereira-reis-25448487"
+    email = "ataias@outlook.com"
+    stackoverflow = "2304697/ataias-reis"
 
 [taxonomies]
   tag = "tags"

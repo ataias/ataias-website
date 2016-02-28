@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   {{ .Hugo.Generator }}
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {{ if eq .URL "/" }}
     <title>{{ .Title }}</title>
@@ -13,6 +13,8 @@
   {{ end }}
 
   <link rel="icon" type="image/png" href="{{.Site.BaseURL}}/assets/favicon/ataias.png" />
+
+  <link rel="stylesheet" href="/css/social.min.css" />
 
   <style media="screen" type="text/css">
     body {
@@ -24,9 +26,19 @@
       .center-block();
     }
 
-    .container > .footer {
+    /*.container > .footer {
       font-size: 14px;
+    }*/
+
+    pre {
+      font-size: 16px !important;
     }
+
+    .container-fluid > .footer {
+      font-size: 16px;
+      padding: 20px;
+    }
+
   </style>
 
 </head>

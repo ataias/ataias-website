@@ -3,15 +3,15 @@
 
 name = "Apr"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/ataias/ataias-website/blob/master/LICENSE"
 description = ""
-homepage = "http://siteforthistheme.com/"
+homepage = ""
 tags = ["", ""]
 features = ["", ""]
 min_version = 0.14
 
 [author]
-  name = ""
+  name = "Ataias Pereira Reis"
   homepage = ""
 
 # If porting an existing theme

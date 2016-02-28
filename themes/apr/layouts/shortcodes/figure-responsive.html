@@ -1,0 +1,6 @@
+<figure>
+  <img {{ with .Get "alt" }}alt="{{.}}"{{end}} class="img-responsive" src="{{ .Get "src" }}" title="{{ .Get "title" }}">
+    <figcaption>
+    <h4>{{ .Get "title" }}</h4>
+    </figcaption>
+</figure>

@@ -1,21 +1,20 @@
+<div class="row">
+  <div class="col-md-12 center-block">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#followme">
+      Wanna follow me?
+    </button>
+  </div>
 </div>
-<!-- Imports! -->
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</div>
 
-<!-- JQuery -->
-<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+{{ partial "modalfollow.html" . }}
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+{{ partial "imports.html" . }}
 
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,900italic' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</script>
+
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -25,15 +24,25 @@
       document.getElementById("currentYear").innerHTML = year;
     });
  </script>
-<div class="container">
+<div class="container-fluid navbar-default">
 <footer class="footer">
-        <p class="text-muted">
-          © {{ .Site.Params.initialyear }}-<span id="currentYear"></span> <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            <span itemprop="name">Ataias Pereira Reis.</span></span>
-            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
-please attribute properly and link back. <br>
-Powered by <a href="http://gohugo.io">Hugo</a>.
-</p>
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-muted">
+        © {{ .Site.Params.initialyear }}-<span id="currentYear"></span> <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <span itemprop="name">Ataias Pereira Reis.</span></span>
+     </p>
+     <p>
+      <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+    please attribute properly and link back.
+     </p>
+
+     <p>
+       Powered by <a href="http://gohugo.io">Hugo</a>.
+     </p>
+    </div>
+  </div>
+
     </footer>
 </div>
 </body>
