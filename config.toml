@@ -9,14 +9,16 @@ googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
 
-[groups]
-  blog = "Blog"
-
 [params]
   initialyear = "2016"
+  Blog = "Blog"
+  About = "About"
 
 # Add additional social link entries underneath
 [social]
     twitter  = "https://twitter.com/ataiasreis"
     github   = "https://github.com/ataias"
     googleplus  = "https://plus.google.com/109223219327789162075"
+
+[taxonomies]
+  tag = "tags"

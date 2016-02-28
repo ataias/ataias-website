@@ -1,6 +1,6 @@
 +++
 date = "2016-02-22T18:38:54-03:00"
-title = "about"
+title = "About"
 
 +++
 

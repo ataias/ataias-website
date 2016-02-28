@@ -16,13 +16,16 @@
 
   <style media="screen" type="text/css">
     body {
-      font-family: sans-serif !important;
       font-size: 18px !important;
     }
 
     .container {
       max-width: 650px;
       .center-block();
+    }
+
+    .container > .footer {
+      font-size: 14px;
     }
   </style>
 
@@ -51,11 +54,13 @@
       <div class="collapse navbar-collapse" id="collapsed-nav-bar-1">
         <ul class="nav navbar-nav navbar-right">
           <li {{ if eq .Site.Title .Title }} class="active" {{ end }}><a href="{{.Site.BaseURL}}">Home</a></li>
-          <li ><a href="#">Blog + {{.Site.Groups.Blog}}</a></li>
+          <li {{ if eq .Site.Params.Blog .Title }} class="active" {{ end }}><a href="#"> {{.Site.Params.Blog}}</a></li>
           <li><a href="#">Projects</a></li>
-          <li class="active"><a href="{{.Site.BaseURL}}/about/index.html">About <span class="sr-only">(current)</span></a></li>
+          <li {{ if eq .Site.Params.About .Title }} class="active" {{ end }}><a href="{{.Site.BaseURL}}/about/index.html">About <span class="sr-only">(current)</span></a></li>
         </ul>
 
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+
+  <div class="container">
