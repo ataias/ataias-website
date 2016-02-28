@@ -1,5 +1,5 @@
 theme = "apr"
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://192.168.2.6/"
 languageCode = "en-us"
 title = "Ataias"
 
@@ -8,6 +8,9 @@ title = "Ataias"
 googleAnalytics = ""
 # Disable comments by leaving disqusShortname empty
 disqusShortname = ""
+
+[groups]
+  blog = "Blog"
 
 [params]
   initialyear = "2016"

@@ -1,22 +1,32 @@
-html {
+/*html {
   position: relative;
   min-height: 100%;
+  background-color: #FFFFFF;
 }
 
 body {
   margin-bottom: 60px;
-}
+}*/
 
 /*Center text*/
-.text {
+/*.text {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  max-width: 500px;
+  max-width: 727px;
+}
+
+body {
+    font-family: "Merriweather", "Georgia", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 p {
   text-align: justify;
+  margin-top: 21px;
+  letter-spacing: -0.004em;
 }
 
 
@@ -30,12 +40,12 @@ p {
   width: 100%;
   min-height: 70px;
   background-color: #080808;
-}
+}*/
 
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
-body > .container {
+/*body > .container {
   padding: 60px 15px 30px;
 }
 
@@ -46,4 +56,4 @@ body > .container {
 .footer > .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
-}
+}*/
