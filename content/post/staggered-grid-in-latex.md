@@ -4,7 +4,7 @@ tags = ["latex", "tikz"]
 title = "Creating a staggered grid in latex with TikZ"
 +++
 
-A staggered grid has some data points in different locations but they are saved in the same place. Weird? Maybe! Nevertheless, it helps with spurious modes that appear in mathematical simulations with finite differences of the Navier Stokes equations and maybe other. Even if you are not interested in representing a staggered grid, this tutorial may serve you well to learn some Tikz. First off, create a new file named `pgraphics.sty` in the directory that you will save your `.tex` file latex. We start by creating a package named `pgraphics` that will be later reference in the `.tex` file. After that, we can write a command that will be than used whenever we want to place the grid. Now, the file looks like:
+A staggered grid is a grid whose data points are spatially in different locations but they are in a single matrix index, like they were in the same place. Weird? Maybe! Nevertheless, it helps with spurious modes that appear in mathematical simulations with finite differences of the Navier Stokes equations and maybe other. Even if you are not interested in representing a staggered grid, this tutorial may serve you well to learn some Tikz. First off, create a new file named `pgraphics.sty` in the directory that you will save your `.tex` file latex. We start by creating a package named `pgraphics` that will be later reference in the `.tex` file. After that, we can write a command that will be than used whenever we want to place the grid. Now, the file looks like:
 
 <pre>
 <code class="language-tex">
