@@ -1,5 +1,5 @@
 theme = "apr"
-baseurl = "http://192.168.2.6/"
+baseurl = "http://192.168.25.65/"
 languageCode = "en-us"
 title = "Ataias"
 

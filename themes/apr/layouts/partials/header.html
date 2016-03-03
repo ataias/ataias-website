@@ -12,7 +12,7 @@
     <title>{{ .Title }} - {{ .Site.Title }}</title>
   {{ end }}
 
-  <link rel="icon" type="image/png" href="{{.Site.BaseURL}}/assets/favicon/ataias.png" />
+  <link rel="icon" type="image/png" href="/assets/favicon/ataias.png" />
 
   <link rel="stylesheet" href="/css/social.min.css" />
 
@@ -57,7 +57,7 @@
           <span class="icon-bar"></span>
         </button>
         <!-- <span> -->
-          <!-- <a class="navbar-brand"><img class="logo" src="{{.Site.BaseURL}}/assets/logo/ataias.white.png" alt="Ataias' Logo" title="Ataias' Logo"/></a> -->
+          <!-- <a class="navbar-brand"><img class="logo" src="/assets/logo/ataias.white.png" alt="Ataias' Logo" title="Ataias' Logo"/></a> -->
         <a class="navbar-brand">{{ .Site.Title }}</a>
       <!-- </span> -->
       </div>
@@ -65,10 +65,10 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="collapsed-nav-bar-1">
         <ul class="nav navbar-nav navbar-right">
-          <li {{ if eq .Site.Title .Title }} class="active" {{ end }}><a href="{{.Site.BaseURL}}">Home</a></li>
+          <li {{ if eq .Site.Title .Title }} class="active" {{ end }}><a href="/">Home</a></li>
           <li {{ if eq .Site.Params.Blog .Title }} class="active" {{ end }}><a href="#"> {{.Site.Params.Blog}}</a></li>
           <li><a href="#">Projects</a></li>
-          <li {{ if eq .Site.Params.About .Title }} class="active" {{ end }}><a href="{{.Site.BaseURL}}/about/index.html">About <span class="sr-only">(current)</span></a></li>
+          <li {{ if eq .Site.Params.About .Title }} class="active" {{ end }}><a href="/about/index.html">About <span class="sr-only">(current)</span></a></li>
         </ul>
 
       </div><!-- /.navbar-collapse -->
